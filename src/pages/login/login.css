@@ -1,0 +1,19 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.centered-login-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;        
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 10px; 
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
