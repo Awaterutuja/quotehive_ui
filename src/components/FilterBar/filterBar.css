@@ -1,0 +1,8 @@
+.filterBarWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  background-color: #d03232;
+}

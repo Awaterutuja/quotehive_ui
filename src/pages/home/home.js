@@ -1,9 +1,15 @@
-import { QuotesHiveLogo } from "../../assets/images/images";
+
+import { useLocation } from 'react-router-dom';
+import {Header, FilterBar} from '../../components';
+import './home.css';
 const Home = () =>{
+    const location = useLocation();
+    const email = location.state?.email || "Guest"; // Get email from state, default to undefined if not present
     return(
-        <div className="bg-sky-200">
-           <QuotesHiveLogo width={120} height={300} />
-        </div>
+       <>
+       <Header username={email} />
+       <FilterBar />
+       </>
     )
 }
 
