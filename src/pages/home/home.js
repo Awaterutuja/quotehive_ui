@@ -1,6 +1,6 @@
 
 import { useLocation } from 'react-router-dom';
-import {Header, FilterBar} from '../../components';
+import {Header, QuotesList,FilterBar} from '../../components';
 import './home.css';
 const Home = () =>{
     const location = useLocation();
@@ -8,7 +8,10 @@ const Home = () =>{
     return(
        <>
        <Header username={email} />
-       <FilterBar />
+        <div className='flex flex-row'>
+            <FilterBar/>
+            <QuotesList />
+        </div>
        </>
     )
 }

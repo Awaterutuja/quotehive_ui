@@ -16,7 +16,7 @@ const Header = (props) => {
             </div>
             <div className="flex items-center justify-center ml-auto mr-2">
                 <BsPersonCheck className="text-3xl text-lime-500 ml-2 mt-1" />
-                <span className="text-yellow-500 text-base font-serif font-bold ml-1">Hello {username?.split('@')[0]}</span>
+                <span className="text-yellow-500 text-lg font-serif font-cursive ml-1">Hello {username?.split('@')[0]}</span>
             </div> 
         </div>
     )
